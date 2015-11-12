@@ -30,21 +30,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="../" class="navbar-brand"/>Julie's Site</a>
+                <a href="/" class="navbar-brand"/>Julie's Site</a>
             </div>
 
             <nav id="jul-navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="../">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="../current-lessons">Current Lessons</a>
+                        <a href="/current-lessons">Current Lessons</a>
                     </li>
                     <li>
-                        <a href="../student-corner">Student Corner</a>
+                        <a href="/student-corner">Student Corner</a>
                     <li>
-                        <a href="../resources">Resources</a>
+                        <a href="/resources">Resources</a>
                     </li>
                 </ul>
             </nav>
@@ -52,15 +52,57 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="page-header" id="banner">
+    <main>
+        <div class="page-header container" id="banner">
             <div class="row">
                 <h1>Welcome to Julie's page!</h1>
                 <p class="lead">For classses given by Julie Mecler.</p>
             </div>
         </div>
 
-        <div class="articles">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+
+           
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="http://i.onionstatic.com/clickhole/2076/original/1200.jpg" alt="Baby Penguin">
+                    <div class="carousel-caption">
+                        <h3>Welcome to Julie's page!</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www2.ucar.edu/sites/default/files/news/2012/Six_Emperor_Penguins.jpg" alt="Penguins in a line">
+                    <div class="carousel-caption">
+                        <h3>Penguins!!</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Pygoscelis_papua_-Nagasaki_Penguin_Aquarium_-swimming_underwater-8a.jpg" alt="Penguin swimming underwater">
+                    <div class="carousel-caption">
+                        <h3>Penguins!!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="articles container">
             
             <article class="row">
                 <div class="page-header">
@@ -102,7 +144,7 @@
             </article>
 
         </div>
-    </div>
+    </main>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
