@@ -6,3 +6,13 @@
 body {
     font-family: grundschrift, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri;
 }
+
+
+.page-header {
+    margin: 20px auto 0px auto;
+}
+
+.carousel-inner > .item > img {
+    margin: auto;
+    height: 500px;
+}
