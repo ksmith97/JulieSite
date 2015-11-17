@@ -7,7 +7,6 @@ body {
     font-family: grundschrift, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri;
 }
 
-
 .page-header {
     margin: 20px auto 0px auto;
 }
@@ -15,4 +14,12 @@ body {
 .carousel-inner > .item > img {
     margin: auto;
     height: 500px;
+}
+
+#accordion {
+    margin-top: 50px;
+}
+
+.panel .panel-title {
+    font-size: 18px;
 }

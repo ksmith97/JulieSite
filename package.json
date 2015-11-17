@@ -14,5 +14,9 @@
     "less-middleware": "1.0.x",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "kerberos": "0.0.17",
+    "mongodb": "^2.0.48"
   }
 }
