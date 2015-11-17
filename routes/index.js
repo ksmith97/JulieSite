@@ -3,8 +3,28 @@ var handle
 var router = express.Router();
 
 var entries = {
-    'student-corner': true,
+    'learning-corner': true,
     entries: [
+        {
+	    title: 'Why is phonics important?',
+	    body: '<p>Phonics is essentially what teaches your child to read and write. Knowing the sounds the letters make will help your child decode words while reading.  Phonics will also help your child discriminate which use while writing words.</p>'
+        },
+        {
+	    title: 'Where do I start?',
+	    body: '<p>Here! Below I have listed our main phonics skills and their difficulty level.</p>'
+        },
+        {
+	    title: 'Word Comparison',
+	    body: '<h5>Level: Easy</h5><p>This is how I can tell if students can discriminate between words. An example would be “Which of these words doesn’t belong? Cat, bat, hat, rat, sun?” Students should be able to discriminate that “sun” does not belong with the others. Continued oral practice at home can help with this skill.</p>'
+        },
+        {
+	    title: 'Rhyming',
+	    body: '<h5>Level: Easy/Medium<h5><p>This can be a difficult skill but it is one of the earlier taught skills. Example: “What word rhymes with cat? Bat!” To practice rhyming at home successful please reference the resource page for websites. Activities to do with your child would include reading a Dr. Seuss book or singing a song with rhymes while identifying them with children.</p>'
+        },
+        {
+	    title: 'Sentence Segmentation',
+	    body: '<h5>Level: Easy</h5><p>Sentence Segmentation is being able to determine how many words are in a sentence. Example: “All hens lay eggs” The student can clap each word or say “Four words in the sentence.” Some of the activities to practice sentence segmentation- make a board game (I can print some for you!) and have student move a space for each word in the said sentence. Whoever reaches the end wins.  Another idea is to take the first lines of common nursery rhymes and have students connect cubes (or line up any object) for each word, then see which nursery rhyme has more words!</p>'
+        },
         {
 	    title: 'Syllable Segmentation and Blending',
 	    body: '<h5>Level: Easy/Medium</h5><p>This is taking two or more syllables and taking them apart or putting them together. An example of syllable segmentation: “What are the two parts in baseball? Base, ball!” Blending: “Lets put together two word parts- base and ball make…? Baseball!” More difficult words can be used such as “porcupine” or “table”. For beginners, take a picture of a baseball and cut it in half to demonstrate the two parts. For advanced learners practice syllable deletion. “I want you to say the word baseball without base” Then the student would say “ball”.</p>'
@@ -33,8 +53,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { home: true });
 });
 
-router.get('/student-corner', function(req, res, next) {
-  res.render('student-corner', entries);
+router.get('/learning-corner', function(req, res, next) {
+  res.render('learning-corner', entries);
 });
 
 router.get('/upcoming-events', function(req, res, next) {
