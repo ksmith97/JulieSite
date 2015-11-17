@@ -3,8 +3,9 @@
     src: url(../fonts/grundschrift/Grundschrift-Normal.otf);
 }
 
-body {
-    font-family: grundschrift, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri;
+html, body {
+    font-family: grundschrift, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
 }
 
 .page-header {
@@ -26,4 +27,23 @@ body {
 
 .reading-resources {
     margin-top: 20px;
+}
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: #56BBB0;
+    height: 100px;
+    margin-bottom: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
