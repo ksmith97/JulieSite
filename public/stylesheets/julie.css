@@ -17,10 +17,6 @@ html, body {
     height: 500px;
 }
 
-#accordion {
-    margin-top: 50px;
-}
-
 .panel .panel-title {
     font-size: 18px;
 }
